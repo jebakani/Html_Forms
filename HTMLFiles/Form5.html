@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width">
+<html>
+    <head>
+        <title>
+            Input Form
+        </title>
+    </head>
+    <body></body>
+    <!-- creating the from using form tag-->
+        <form>
+            <!--creating divider for each field-->
+            <header class="headerContainer">HTML 5 FORM INPUT FIELD</header>
+            <div>
+                <!-- creating the Name field as text field-->
+                <label>Text Input Type for Name:</label>
+                <input type="text" id="Name" name="Name">     
+            </div>
+            <div>
+                <!-- creating password field-->
+                <label>Password:</label>
+                <input type="password" id="Password" name="Password">
+            </div>
+            <div>
+                  <!-- creating Email field-->
+                <label>Email:</label>
+                <input type="email" id="Email" name="Email">
+            </div>
+            <div>
+                  <!-- creating url field for any link field-->
+                <label>URL:</label>
+                <input type="url" id="URL" name="URL">
+            </div>
+            <div>
+                  <!-- creating number field-->
+                <label>Number:</label>
+                <input type="number" id="Number" name="Number">
+            </div>
+            <div>
+                  <!-- creating telphone field-->
+                <label>Tel phone:</label>
+                <input type="tel" id="Telphone" name="Telphone">
+            </div>
+            <div>
+                <label>Search:</label>
+                <input type="search" id="Search" name="Search">
+            </div>
+            <div>
+                  <!-- creating date time field-->
+                <label for="DateTime">Date and Time:</label>
+                <input type="datetime-local" id="DateTime" name="DateTime">
+            </div>
+            <div>
+                <!-- creating salary field as range-->
+                <label for="salary">Salary:</label>
+                <input type="range" id="salary" name="salary" min="30000" max="50000" step="100" value="40000">
+                <output class="salary-output" for="salary">40000</output>
+            </div>
+            
+        </form>
+    </body>
+</html>
