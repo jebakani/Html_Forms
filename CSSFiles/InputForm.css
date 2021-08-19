@@ -54,7 +54,7 @@ input
 {
     flex: auto;
 }
-.error
+error-output
 {
     font-size: 16px;
     font-weight: bold;
