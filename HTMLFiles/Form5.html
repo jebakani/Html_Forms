@@ -42,7 +42,8 @@
             <div>
                   <!-- creating telphone field-->
                 <label>Tel phone:</label>
-                <input type="tel" id="Telphone" name="Telphone" >
+                <input type="tel" id="Telphone" name="Telphone" placeholder="91 1234567890">
+                <error-output class="PhoneError" for="Telphone"></error-output>
             </div>
             <div>
                 <label>Search:</label>
@@ -63,42 +64,7 @@
                 <button>Submit</button>
             </div>
         </form>
-        <script>
-           {
-               //validate name
-                const name=document.querySelector('#Name');
-                const texterror=document.querySelector('.error');
-                name.addEventListener('input',function()
-                {
-                    let nameRegex=RegExp('^[A-Z]{1}[a-zA-Z]{2,}$');
-                    if(nameRegex.test(name.value))
-                    {
-                        texterror.textContent="";
-                    }
-                    else
-                    {
-                        texterror.textContent="Name is Incorrect"
-                    }
-                });
-            }
-            {
-               //validate Email
-                const Email=document.querySelector('#Email');
-                const errorContent=document.querySelector('.emailError');
-                Email.addEventListener('input',function()
-                {
-                    //regex to validate email id
-                    let nameRegex=RegExp('^[a-zA-Z]{3}([\\- \\+ _\\.]*[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-z]{2,3}(\\.[a-zA-Z]{2,4}){0,1}$');
-                    if(nameRegex.test(Email.value))
-                    {
-                        errorContent.textContent="";
-                    }
-                    else
-                    {
-                        errorContent.textContent="Invalid Email Id";
-                    }
-                });
-            }
+        <script src="../JSFile/Form5.js">
         </script>
     </body>
 </html>
