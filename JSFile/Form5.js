@@ -61,3 +61,22 @@
            }
        });
  }
+  //UC4-Validate password
+  {
+    //validate password
+    const password=document.querySelector('#Password');
+    const errorContent=document.querySelector('.PasswordError');
+    password.addEventListener('input',function()
+    {
+        //regex to validate phone number with country code
+        let nameRegex=RegExp('^[a-zA-Z0-9]{8,}$');
+        if(nameRegex.test(password.value))
+        {
+            errorContent.textContent="";
+        }
+        else
+        {
+            errorContent.textContent="Invalid password";
+        }
+    });
+}
