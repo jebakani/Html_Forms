@@ -16,11 +16,11 @@
                 <!-- creating the Name field as text field-->
                 <label>Text Input Type for Name:</label>
                 <input type="text" id="Name" name="Name" >     
-                <error-output class="error-output" for="text"></error-output>
+                <error-output class="error" for="Name"></error-output>
             </div>
             <div>
                 <!-- creating password field-->
-                <label>Password:</label>
+                <label for="Password">Password:</label>
                 <input type="password" id="Password" name="Password"  >
             </div>
             <div>
@@ -62,5 +62,23 @@
                 <button>Submit</button>
             </div>
         </form>
+        <script>
+           {
+                const name=document.querySelector('#Name');
+                const texterror=document.querySelector('.error');
+                name.addEventListener('input',function()
+                {
+                    let nameRegex=RegExp('^[A-Z]{1}[a-z]{2,}$');
+                    if(nameRegex.test(name.value))
+                    {
+                        texterror.textContent="";
+                    }
+                    else
+                    {
+                        texterror.textContent="Name is Incorrect"
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
