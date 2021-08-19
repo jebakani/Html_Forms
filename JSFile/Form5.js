@@ -69,7 +69,7 @@
     password.addEventListener('input',function()
     {
         //regex to validate phone number with country code
-        let nameRegex=RegExp('^[a-zA-Z0-9]{8,}$');
+        let nameRegex=RegExp("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$+-/*]).{8,}$");
         if(nameRegex.test(password.value))
         {
             errorContent.textContent="";
