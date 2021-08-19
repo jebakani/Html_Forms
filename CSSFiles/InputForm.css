@@ -60,3 +60,54 @@ error-output
     font-weight: bold;
     color: red;
 }
+/* adding media queries to the web page  */
+@media screen and (max-width:350px) {
+label,input,button
+{
+font-size:12px ;
+line-height: 1;
+}
+label
+{  
+    width: 30%;
+    margin-right: 12%;
+    padding-left: 8px;
+}
+form
+{
+    margin-top: 49px;
+    background-color: rosybrown;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+}
+
+@media screen and (min-width:1500px) {
+    label,input,button
+    {
+        font-size: 23px;
+        line-height: 3;
+    }
+    label
+    {  
+        width: 30%;
+        margin-right: 12%;
+        padding-left: 8px;
+    }
+    form
+    {
+        margin-top: 49px;
+        background-color: snow;
+        border: 2px solid black;
+        padding: 3px;
+    }
+    body
+    {
+        width: 100%;
+        max-width: 788px;
+        margin: 0px auto;
+        padding: 5em;
+        background-color: thistle;
+    }
+    }
